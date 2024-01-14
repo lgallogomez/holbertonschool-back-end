@@ -12,29 +12,34 @@ import json
 """
 module gathers data
 """
-user_id = argv[1]
 
-api_url = f"https://jsonplaceholder.typicode.com/users/{user_id}"
+def main():
+    """
+    module gathers data
+    """
+    user_id = argv[1]
 
-api_to_dos = "https://jsonplaceholder.typicode.com/todos/"
+    api_url = f"https://jsonplaceholder.typicode.com/users/{user_id}"
 
-to_do_response = requests.get(api_to_dos)
-json_to_do = to_do_response.json()
-print(json_to_do)
+    api_to_dos = "https://jsonplaceholder.typicode.com/todos/"
 
-list = []
-for item in json_to_do:
-    if item["userId"] == user_id:
-        print(item)
+    to_do_response = requests.get(api_to_dos)
+    json_to_do = to_do_response.json()
+    print(json_to_do)
 
-user_id_int = int(user_id)
+    list = []
+    for item in json_to_do:
+        if item["userId"] == user_id:
+            print(item)
 
-response = requests.get(api_url)
-dicti_json = response.json()
-print(response)
-print(type(dicti_json))
-print(dicti_json)
-print(f"Employee {dicti_json['name']} is done with ")
+    user_id_int = int(user_id)
+
+    response = requests.get(api_url)
+    dicti_json = response.json()
+    print(response)
+    print(type(dicti_json))
+    print(dicti_json)
+    print(f"Employee {dicti_json['name']} is done with ")
 
 if __name__ == "__main__":
     main()
