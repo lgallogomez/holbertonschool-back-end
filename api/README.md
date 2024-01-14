@@ -1,1 +1,0 @@
-This project is all about working with apis using the python library requests.
