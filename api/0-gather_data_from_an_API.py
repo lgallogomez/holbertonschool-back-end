@@ -9,7 +9,9 @@ import requests
 from sys import argv
 import json
 
-
+"""
+module gathers data
+"""
 user_id = argv[1]
 
 api_url = f"https://jsonplaceholder.typicode.com/users/{user_id}"
