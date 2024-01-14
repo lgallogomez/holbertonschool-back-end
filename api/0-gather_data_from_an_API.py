@@ -9,9 +9,6 @@ import requests
 from sys import argv
 import json
 
-"""
-module gathers data
-"""
 
 def main():
     """
