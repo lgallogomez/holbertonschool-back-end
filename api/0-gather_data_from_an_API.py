@@ -11,9 +11,7 @@ import json
 
 user_id = argv[1]
 
-#api_url = f"https://jsonplaceholder.typicode.com/todos/{user_id}"
 api_url = f"https://jsonplaceholder.typicode.com/users/{user_id}"
-#print(type(user_id))
 
 api_to_dos = "https://jsonplaceholder.typicode.com/todos/"
 
