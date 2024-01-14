@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
-'''
-file gathers info from api
-'''
+"""
+module gathers data using api and displays info
+"""
+
 
 import requests
 from sys import argv
