@@ -35,3 +35,6 @@ print(response)
 print(type(dicti_json))
 print(dicti_json)
 print(f"Employee {dicti_json['name']} is done with ")
+
+if __name__ == "__main__":
+    main()
