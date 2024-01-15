@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """module gathers data using api and displays info"""
 
 if __name__ == "__main__":
