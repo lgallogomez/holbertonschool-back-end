@@ -2,7 +2,7 @@
 
 """module gathers data using api and displays info"""
 
-
+if __name__ == "__main__":
 import requests
 from sys import argv
 import json
@@ -35,6 +35,3 @@ def main():
     print(type(dicti_json))
     print(dicti_json)
     print(f"Employee {dicti_json['name']} is done with ")
-
-if __name__ == "__main__":
-    main()
