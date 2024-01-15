@@ -3,15 +3,10 @@
 """module gathers data using api and displays info"""
 
 if __name__ == "__main__":
-import requests
-from sys import argv
-import json
+    import requests
+    from sys import argv
+    import json
 
-
-def main():
-    """
-    module gathers data
-    """
     user_id = argv[1]
 
     api_url = f"https://jsonplaceholder.typicode.com/users/{user_id}"
