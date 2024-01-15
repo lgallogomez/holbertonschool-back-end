@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""
-module gathers data using api and displays info
-"""
+
+"""module gathers data using api and displays info"""
 
 
 import requests
