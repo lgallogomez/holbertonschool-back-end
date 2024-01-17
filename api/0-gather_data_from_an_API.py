@@ -1,20 +1,20 @@
 #!/usr/bin/python3
 """
-module gathers data using api and displays info
+Python script returns employee name, number of tasks done
+and list of progress
 """
 
-if __name__ == "__main__":
-    import requests
-    from sys import argv
-    import json   
 
+import requests
+from sys import argv
+import json 
+
+if __name__ == "__main__":
     """getting info from todos api"""
     user_id = argv[1]
     api_todos = f"https://jsonplaceholder.typicode.com/users/{user_id}/todos"
     to_do_response = requests.get(api_todos)
     json_to_do = to_do_response.json()
-   
-    
 
     """getting user from users api"""
     api_url = f"https://jsonplaceholder.typicode.com/users/{user_id}"
@@ -36,4 +36,3 @@ if __name__ == "__main__":
     for item in json_to_do:
         if item["completed"] is True:
             print(item["title"])
-    
