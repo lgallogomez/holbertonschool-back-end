@@ -5,9 +5,10 @@ and list of progress
 """
 
 
+import json 
 import requests
 from sys import argv
-import json 
+
 
 if __name__ == "__main__":
     """getting info from todos api"""
@@ -20,7 +21,7 @@ if __name__ == "__main__":
     api_url = f"https://jsonplaceholder.typicode.com/users/{user_id}"
     response = requests.get(api_url)
     dicti_json = response.json() 
-    
+
     tasks_done = 0
     all_tasks = 0
     for item in json_to_do:
@@ -32,8 +33,7 @@ if __name__ == "__main__":
 
     print(f"Employee {dicti_json['name']} is done with({tasks_done}/{all_tasks}):")
     """printing  """
-    
+
     for item in json_to_do:
         if item["completed"] is True:
             print(item["title"])
-    
