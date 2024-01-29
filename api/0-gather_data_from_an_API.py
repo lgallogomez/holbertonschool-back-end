@@ -31,7 +31,10 @@ if __name__ == "__main__":
     for item in json_to_do:
         all_tasks += 1
 
-    print("Employee {} is done with({}/{}):".format(j_obj['name'], tasks_done, all_tasks))
+    user = j_obj["name"]
+
+
+    print(f"Employee {user} is done with({tasks_done}/{all_tasks}):")
     """printing  """
 
     for item in json_to_do:
