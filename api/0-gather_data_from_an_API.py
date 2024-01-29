@@ -37,4 +37,4 @@ if __name__ == "__main__":
 
     for item in json_to_do:
         if item["completed"] is True:
-            print(f"TS{item['title']}")
+            print(f"\tTS{item['title']}")
