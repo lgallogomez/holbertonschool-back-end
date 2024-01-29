@@ -34,7 +34,8 @@ if __name__ == "__main__":
     user = j_obj["name"]
     print(f"Employee {user} is done with({tasks_done}/{all_tasks}):")
     """printing  """
-
+    final_list = []
     for item in json_to_do:
         if item["completed"] is True:
+            final_list.append(item['title'])
             print(f"\tTS{item['title']}")
