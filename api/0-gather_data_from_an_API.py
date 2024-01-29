@@ -32,7 +32,7 @@ if __name__ == "__main__":
         all_tasks += 1
 
     user = j_obj["name"]
-    print(f"Employee {user} is done with({tasks_done}/{all_tasks}):")
+    print(f"Employee {user} is done with tasks({tasks_done}/{all_tasks}):")
     """printing  """
     for item in json_to_do:
         if item["completed"] is True:
