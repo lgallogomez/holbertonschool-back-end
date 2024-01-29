@@ -20,7 +20,7 @@ if __name__ == "__main__":
     """getting user from users api"""
     api_url = f"https://jsonplaceholder.typicode.com/users/{user_id}"
     response = requests.get(api_url)
-    j_obj = response.json() 
+    j_obj = response.json()
 
     tasks_done = 0
     all_tasks = 0
